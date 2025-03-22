@@ -22,8 +22,30 @@ function App() {
         <Device name= "S24 ultra" brand = "Samsung" price= "132k" color ="White"></Device>
         <Device name= "Iphone 15 pro max" brand = "Iphone" price= "152k" color ="gold"></Device>
       </div>
+      <div>
+        <Plyers name= "Tamim" run= "6700"></Plyers>
+        <Plyers name= "Sakib All Hassan" run= "9700"></Plyers>
+        <Plyers name= "Sabbir Rahaman" run= "2300"></Plyers>
+        <Plyers name= "Mamudullah" run= "5600"></Plyers>
+      </div>
       
     </>
+  )
+}
+
+// using disturctering 
+// {name, run}={name: 'Mamudullah', run: '5600'}
+function Plyers({name, run}){
+  return(
+    <div style={{
+      border: "2px solid aqua",
+      color: "white",
+      margin: "10px",
+      padding: "10px"
+    }}>
+      <p>Name : {name}</p>
+      <p>Runs : {run}</p>
+    </div>
   )
 }
 
